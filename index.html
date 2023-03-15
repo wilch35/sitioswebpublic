@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-image: url("fondo.gif");
+            height: 400px;
+            background-size: cover;
+
+            background-position: center center;
+        }
+
+        .flex_afw {
+            display: flex;
+            align-items: center;
+            padding: 6px;
+            height: 70px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            border-color: crimson;
+            margin: 0.5%;
+        }
+
+        .flex_afw1 {
+            flex-direction: row;
+            display: flex;
+            align-items: center;
+            padding: 6px;
+            height: 40px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            border-color: rgb(12, 26, 73);
+            margin: 3%;
+            justify-content: center;
+            background-color: rgb(19, 19, 22);
+        }
+
+        .flex_afw3 {
+            flex-direction: row;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .estilo1 {
+            background-color: #f1f1f1;
+            margin: 0.5%;
+            width: 25%;
+            height: 55px;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .estilo2 {
+            background-color: #f1f1f1;
+            margin: 0.5%;
+            width: 25%;
+            height: 55px;
+
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .logo {
+            background-color: #f1f1f1;
+            border-color: rgb(255, 0, 0);
+            background-color: #ffffff;
+            float: center;
+            width: 70%;
+            height: 55px;
+            border-radius: 8px;
+            text-align: center;
+            font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .cuerpo {
+            background-color: white;
+
+        }
+
+        .btn {
+            background-color: #f1f1f1;
+            border-color: rgb(40, 16, 255);
+            background-color: #ffffff;
+            float: center;
+            width: 70%;
+            height: 30px;
+            border-radius: 8px;
+            text-align: center;
+            font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            justify-content: center;
+            /* align item horizontally */
+            align-items: center;
+        }
+
+        .btn:hover {
+            border-color: rgb(255, 0, 0);
+            font-size: 20px;
+        }
+
+        .card {
+            display: flex;
+            background-color: aliceblue;
+            flex-direction: column;
+        }
+
+        .card .content {
+            flex: 1 1 auto;
+            text-align: left;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(27, 27, 27);
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <div class="flex_afw">
+        <div class="estilo1">
+            <img class="logo" src="logo.png" style="background-color: rgb(255, 255, 255);">
+        </div>
+        <div class="estilo1"></div>
+        <div class="estilo1"></div>
+        <div class="estilo1">
+            <div>
+                <input class="logo" type="search" placeholder="Buscar" style="border-radius: 10px;">
+            </div>
+        </div>
+    </div>
+    <div class="flex_afw1">
+
+        <div class="estilo2">
+            <br>
+            <button class="btn">
+
+                Inicio
+            </button>
+        </div>
+        <div class="estilo2">
+            <br>
+            <button class="btn">
+                Flex Box
+            </button>
+        </div>
+        <div class="estilo2">
+            <br>
+            <button class="btn">
+                mockup
+            </button>
+        </div>
+        <div class="estilo2">
+            <br>
+            <button class="btn">
+                Acerca de
+            </button>
+        </div>
+
+    </div>
+
+
+    <div class="flex_afw3">
+
+        <div style="flex-grow: 4;" class="estilo2">
+            <br>
+            <div class="cards">
+                <div class="card">
+                    <a3>Mockup</a3>
+                    <div class="content">
+                        <img src="mookup.drawio.png" width="500px" height="500px">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div style="flex-grow: 10;" class="estilo2">
+            <br>
+            <div class="card">
+                <a style="text-align: left;">
+                    <strong>
+                        <a3>El contenedor flex
+                    </strong></a3><br><br>
+                    Un área del documento que contiene un flexbox es llamada contendedor flex. Para crear un contenedor
+                    flex, establecemos la propiedad del área del contenedor display como flex o inline-flex. Tan pronto
+                    como hacemos esto, los hijos directos de este contenedor se vuelven ítems flex. Como con todas las
+                    propiedades de CSS, se definen algunos valores iniciales, así que cuando creemos un contenedor flex
+                    todos los ítems flex contenidos se comportarán de la siguiente manera.
+                    <br>
+                    <br>
+                    <br>
+                    Los ítems se despliegan sobre una fila (la propiedad flex-direction por defecto es row).<br>
+                    Los ítems empiezan desde el margen inicial sobre el eje principal.<br>
+                    Los ítems no se ajustan en la dimensión principal, pero se pueden contraer.<br>
+                    Los ítems se ajustarán para llenar el tamaño del eje cruzado.<br>
+                    La propiedad flex-basis es definida como auto.<br>
+                    La propiedad flex-wrap es definida como nowrap.<br>
+                    El resultado es que todos los ítems se alinearán en una solo fila, usando el tamaño del contenedor
+                    como su tamaño en el eje principal. Si hay más ítems de los que caben en el contenedor, estos no
+                    pasarán más abajo si no que sobrepasarán el margen. Si hay ítems más altos que otros, todos los
+                    ítems serán ajustados en el eje cruzado para alcanzar al mayor.<br>
+                    <br>
+                    <br>
+                    Se puede ver en el ejercicio en vivo de abajo cómo luce. Intente editar el ítem o añadir ítems
+                    adicionales para así probar el comportamiento inicial de flexbox.<br>
+                </a>
+            </div>
+        </div>
+        <div y class="estilo2">
+            <br>
+            <div class="card">
+                <a style="text-align: left;">
+                    <strong>
+                        <a3>Acerca de 
+                    </strong></a3><br><br>
+                    <strong><a style="text-align: center;">
+                        DISEÑO DE SITIOS WEB
+Unidad 1 - Fase 2</a>
+<br><br><br>
+<br>
+
+
+                    <a3>Autor:</strong> Andres Felipe Wilches Cely 
+                    </a3><br><br><br>
+                    <br>
+                    <br>
+
+
+                    <strong>Presentado a: </strong><br><br>
+                    MARIO LUIS AVILA PEREZ
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    Universidad Nacional Abierta y a Distancia UNAD <br>
+Escuela de Ciencias Básicas, Tecnología e Ingeniería ECBTI<br>
+Fundamentos de Programación <br>
+Cajica - Cundinamarca 08/03/2023<br>
+                    
+                    <br>
+                    
+                
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+</body>
+<div class="footer">
+    <div class="flex_afw3">
+
+        <div style="flex-grow: 4;" class="estilo2">
+            <br>
+            <div class="cards">
+                <div class="card">
+                    <a>
+                        Flex Box
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        <div style="flex-grow: 10;" class="estilo2">
+            <br>
+
+            <div class="card"> <a style="color: black;">Ultima actualizacion 12/03/2023</a></div>
+
+
+        </div>
+        <div y class="estilo2">
+            <br>
+
+            
+        </div>
+
+
+    </div>
+
+</div>
+
+</html>
